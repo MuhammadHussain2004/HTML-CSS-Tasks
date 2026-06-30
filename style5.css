@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    position: sticky;
+    top: 0;
+  z-index: 1000;
+  background-color: white;
+}
+.header  h1{
+    text-align: center;
+    background-color: cyan ;
+
+}
+nav{
+    padding:20px 20px ;
+    background-color: yellowgreen;
+}
+nav ul{
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+   
+}
+nav ul li{
+    list-style: none;
+}
+.hero{
+    height: 100vh;
+}
+.banner{
+    background: url(/fullstack.jpg) no-repeat center center/cover;
+   font-size: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+      color: white;
+       font-family: 'Courier New', Courier, monospace;
+       padding:20px ;
+}
+
+.banner a{
+  color: white;
+  text-decoration: none;
+  background-color: #00bcd4;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.banner a:hover{
+    color: chocolate;
+}
+.about img{
+    margin-top: 50px;
+     width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.img_container{
+   display: flex;
+    justify-content: center; 
+  align-items: center;
+}
+
+.about{
+    text-align: center;
+    padding: 20px;
+    background-color: burlywood;
+}
+.about p,h3,ul{
+    margin-top: 20px;
+
+}
+.about h3{
+    padding: 2px 6px;  
+    background-color: darkorchid;
+    display: inline-block;
+}
+.about ul li{
+    list-style: none;
+  
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 20px;
+    padding: 20px;
+    gap: 10px;
+    justify-content: center;
+}
+.card
+{
+border: 2px solid red;
+border-radius: 10px;
+padding: 20px;
+width: 300px;
+box-shadow: 0px 4px 12px rgba(0,0,0.0.1);
+height: 300px;
+line-height: 3rem;
+transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.card h2,p,a{
+    text-align: center;
+    justify-content: center;
+}
+.card:hover{
+ transform: scale(1.03);
+ background-color: #00bcd4;
+ box-shadow:  0 6px 18px rgba(0,0,0,1);
+}
+.footer{
+    text-align: center;
+}
+.footer form{
+    display: inline-block;
+    border: 2px solid purple;
+    border-radius: 10px;
+    padding: 20px;
+}
+.footer h2, form{
+    text-align: center;
+    margin: 20px;
+}
+.footer form ,input, textarea, button{
+     margin-top: 20px;
+}
+.footer form button{
+    padding: 5px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+}
+footer{
+    border-top: 2px solid greenyellow;
+    margin-top: 5px ;
+    padding: 5px;
+}
+
+
+/* 📱 For tablets and below (768px) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner {
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Stack cards */
+  }
+
+  .card {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .footer form {
+    width: 90%;
+  }
+
+  .about img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* 📱 For phones and smaller (480px) */
+@media (max-width: 480px) {
+  .banner {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .banner h1 {
+    font-size: 24px;
+  }
+
+  .card {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .footer form button {
+    width: 100%;
+  }
+
+  .about ul li {
+    font-size: 14px;
+  }
+}
+
+

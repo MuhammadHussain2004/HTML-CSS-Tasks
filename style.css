@@ -1,0 +1,66 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+header h1{
+    text-align: center;
+}
+nav {
+  
+    background-color:aqua;
+    border: 2px solid blue;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+nav a:hover{
+    color: brown;
+}
+
+
+header, footer{
+   background-color: bisque;
+   color: blue;
+   padding: 20px ;
+}
+article, section{
+    margin: auto;
+    padding: 20px auto;
+}
+section h1{
+    padding: 20px;
+    text-align: center;
+    background-color: beige;
+}
+section p{
+    text-align: center;
+    padding: 20px;
+}
+
+article h1{
+    padding: 20px;
+    text-align: center;
+    background-color: beige;
+}
+article p{
+    text-align: center;
+    padding: 20px;
+}
+main{
+    flex: 1;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    
+}
